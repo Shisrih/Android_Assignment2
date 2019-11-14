@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:textSize="30dp"
+            android:text="User Registration"
+            android:layout_gravity="center"/>
+
+
+    </TableRow>
+
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    style="@style/formStyle">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"/>
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/textfieldshape"
+        android:layout_marginLeft="20px"
+        android:layout_gravity="center_vertical"
+        android:textSize="35px"/>
+</TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/formStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DoB"/>
+
+        <EditText
+            android:id="@+id/DoB"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:focusable="false"
+            android:background="@drawable/textfieldshape"
+            android:layout_marginLeft="20px"
+            android:layout_gravity="center_vertical"
+            android:textSize="35px"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20px">
+            <RadioButton
+                android:id="@+id/RBMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/RBFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+
+            <RadioButton
+                android:id="@+id/RBOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"/>
+        </RadioGroup>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/formStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"/>
+
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="@drawable/textfieldshape"
+            android:layout_marginLeft="20px"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/formStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"/>
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="@drawable/textfieldshape"
+            android:layout_marginLeft="20px"
+            android:layout_gravity="center_vertical"
+            android:textSize="35px"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/formStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="@drawable/textfieldshape"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/formStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image"/>
+
+        <EditText
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="@drawable/textfieldshape"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/formStyle">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="@drawable/buttonshapes"
+            android:text="Submit"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="@drawable/buttonshapes"
+            android:text="View"/>
+    </TableRow>
+
+
+</TableLayout>
+</ScrollView>
